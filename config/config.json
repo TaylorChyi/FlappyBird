@@ -1,0 +1,64 @@
+{
+    "WINDOW": {
+        "WIN_WIDTH": 700,
+        "WIN_HEIGHT": 1000,
+        "CAPTION": "Flappy Bird"
+    },
+
+    "ORIGIN_POINT": {
+        "X": 0,
+        "Y": 0
+    },
+
+    "FONT" : {
+        "STATE" : {
+            "NAME": "comicsans",
+            "SIZE": 50
+        },
+        "SCORE": {
+            "NAME": "comicsans",
+            "SIZE": 50
+        },
+        "END": {
+            "NAME": "comicsans",
+            "SIZE": 70
+        }
+    },
+
+    "RESOURCE" : {
+        "ROOT" : "images",
+        "BACKGROUND" : {
+            "VELOCITY" : 20,
+            "IMAGE" : "background.png"
+        },
+        "FLOOR": "floor.png",
+        "BIRDS": [
+            "bird1.png",
+            "bird2.png",
+            "bird3.png"
+        ],
+        "PIPE": "pipe.png"
+    },
+
+    "FILE_PATH" : {
+        "MODEL" : {
+            "FOLDER" : "model",
+            "FILENAME" : "best.pickle"
+        },
+        "TRAINING_CONFIG" : {
+            "FOLDER" : "model",
+            "FILENAME" : "config-feedforward.txt"
+        }
+    },
+
+    "DRAW_LINES": false,
+
+    "HUMAN_TRAIN_MODEL_MODE" : "HUMAN",
+
+    "FITNESS": {
+        "LIVE" : 20,
+        "FLOOR" : 1000,
+        "PIPE" : 400,
+        "PASS" : 100
+    }
+}
