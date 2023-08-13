@@ -1,5 +1,6 @@
 from config.config_loader import STAT_FONT, WIN_HEIGHT
-class State:
+
+class Label:
     
     COUNT = 0
     font = STAT_FONT
@@ -8,8 +9,8 @@ class State:
         self.label = label
         self.number = number
         self.x = 50
-        self.y = WIN_HEIGHT - (80 + State.COUNT * 50)
-        State.COUNT += 1
+        self.y = WIN_HEIGHT - (80 + Label.COUNT * 50)
+        Label.COUNT += 1
         
     def set_number(self, number):
         self.number = number

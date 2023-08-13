@@ -1,16 +1,19 @@
+
+import neat
+
 import pygame
 import random
 from collections import deque
 import pickle
 import os
 
-from components.bird import Bird
-from components.pipe import Pipe
-from components.floor import Floor
-from components.background import Background
-from components.state import State
+from entities.bird import Bird
+from entities.pipe import Pipe
+from entities.floor import Floor
+from entities.background import Background
+from entities.label import Label
 
-from view.renderer import Renderer
+from components.scene_manager import Renderer
 from config.config_loader import WIN_WIDTH, WIN_HEIGHT, FLOOR_IMAGE, FITNESS_PIPE, FITNESS_FLOOR, FITNESS_LIVE, FITNESS_PASS, DRAW_LINES
 
 from utils.file_loader import file_path
@@ -18,6 +21,10 @@ from utils.file_loader import file_path
 from game.collision_manager import CollisionManager
 
 import neat
+from states.base_state import GameState
+from states.main_menu_state import MainMenuState
+from states.playing_state import PlayingState
+from states.game_over_state import GameOverState
 
 class GameController:
 
@@ -31,12 +38,12 @@ class GameController:
         self.pipes = deque([Pipe(WIN_WIDTH)])  # Start with one pipe for simplicity
         self.floor = Floor(WIN_HEIGHT - FLOOR_IMAGE.get_height())
         self.background = Background()
-        self.score = State("score", 0)
+        self.score = Label("score", 0)
         
         
         if (self.mode == "TRAIN"):
-            self.generation = State("generation", 0)
-            self.fitness = State("fitness")
+            self.generation = Label("generation", 0)
+            self.fitness = Label("fitness")
             
             
         self.renderer = Renderer()  # Create an instance of our Renderer class
