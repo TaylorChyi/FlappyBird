@@ -1,4 +1,4 @@
-from config.config_loader import HUMAN_TRAIN_MODEL_MODE
+from services.config_loader import HUMAN_TRAIN_MODEL_MODE
 from game.game_controller import GameController
 import argparse
 

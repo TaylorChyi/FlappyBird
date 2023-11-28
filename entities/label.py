@@ -1,4 +1,4 @@
-from config.config_loader import STAT_FONT, WIN_HEIGHT
+from services.config_loader import STAT_FONT, WIN_HEIGHT
 
 class Label:
     

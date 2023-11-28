@@ -1,5 +1,5 @@
 import pygame
-from config.config_loader import WIN, DRAW_LINES
+from services.config_loader import WIN, DRAW_LINES
 
 class Renderer:
     

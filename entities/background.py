@@ -1,4 +1,4 @@
-from config.config_loader import BACKGROUND_IMAGE, BACKGROUND_VELOCITY
+from services.config_loader import BACKGROUND_IMAGE, BACKGROUND_VELOCITY
 
 class Background:
     """Class to represent the scrolling background of the game.

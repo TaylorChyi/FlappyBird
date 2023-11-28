@@ -1,6 +1,6 @@
 import pygame
 import random
-from config.config_loader import PIPE_IMAGE
+from services.config_loader import PIPE_IMAGE
 
 class Pipe:
     

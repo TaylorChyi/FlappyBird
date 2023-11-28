@@ -1,5 +1,5 @@
 import pygame
-from config.config_loader import WIN_HEIGHT
+from services.config_loader import WIN_HEIGHT
 
 class CollisionManager:
     

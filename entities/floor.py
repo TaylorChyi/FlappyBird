@@ -1,4 +1,4 @@
-from config.config_loader import FLOOR_IMAGE
+from services.config_loader import FLOOR_IMAGE
 
 class Floor:
     """

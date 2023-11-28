@@ -14,9 +14,9 @@ from entities.background import Background
 from entities.label import Label
 
 from components.scene_manager import Renderer
-from config.config_loader import WIN_WIDTH, WIN_HEIGHT, FLOOR_IMAGE, FITNESS_PIPE, FITNESS_FLOOR, FITNESS_LIVE, FITNESS_PASS, DRAW_LINES
+from services.config_loader import WIN_WIDTH, WIN_HEIGHT, FLOOR_IMAGE, FITNESS_PIPE, FITNESS_FLOOR, FITNESS_LIVE, FITNESS_PASS, DRAW_LINES
 
-from utils.file_loader import file_path
+from services.file_loader import file_path
 
 from game.collision_manager import CollisionManager
 

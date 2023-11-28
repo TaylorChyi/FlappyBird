@@ -1,5 +1,5 @@
 import pygame
-from config.config_loader import BIRDS_IMAGE
+from services.config_loader import BIRDS_IMAGE
 
 class Bird:
     """Class representing the flappy bird in the game.

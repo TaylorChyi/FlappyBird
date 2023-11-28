@@ -1,5 +1,5 @@
 import os
-from config.config_loader import FILE_PATH
+from services.config_loader import FILE_PATH
 
 def file_path(filename):
     """
